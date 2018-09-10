@@ -29,6 +29,7 @@
             android:layout_width="92dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:contentDescription="@string/add"
             app:srcCompat="@drawable/button_add" />
 
         <ImageButton
@@ -36,6 +37,7 @@
             android:layout_width="92dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:contentDescription="@string/sub"
             app:srcCompat="@drawable/button_subtract" />
     </LinearLayout>
 
@@ -47,11 +49,12 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="132dp"
         android:text="@string/pick_your_challenge"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@android:color/black"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.63"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -59,7 +62,7 @@
         android:id="@+id/linearLayout2"
         android:layout_width="391dp"
         android:layout_height="151dp"
-        android:layout_marginBottom="224dp"
+        android:layout_marginBottom="128dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -74,6 +77,7 @@
             android:layout_width="92dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:contentDescription="@string/multi"
             app:srcCompat="@drawable/button_multiply" />
 
         <ImageButton
@@ -81,6 +85,7 @@
             android:layout_width="92dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:contentDescription="@string/divid"
             app:srcCompat="@drawable/button_divide" />
     </LinearLayout>
 
@@ -94,14 +99,15 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="How to play"
+        android:text="@string/how_to_play"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.171" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button2"
@@ -113,12 +119,27 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Exit"
+        android:text="@string/exit"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="285dp"
+        android:layout_height="128dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/graphic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/numbers" />
 
 </android.support.constraint.ConstraintLayout>
