@@ -3,9 +3,18 @@
     <string name="pick_your_challenge">Pick your challenge:</string>
     <string name="exit">Exit</string>
     <string name="how_to_play">How to play</string>
-    <string name="multi">multi</string>
-    <string name="sub">sub</string>
-    <string name="divid">divid</string>
-    <string name="add">add</string>
     <string name="graphic">graphic</string>
+    <string name="addition">add</string>
+    <string name="subtraction">subtract</string>
+    <string name="multiplication">multiply</string>
+    <string name="division">divide</string>
+     <string name="high_score">High score:</string>
+    <string name="your_score">Your score:</string>
+    <string name="x">x</string>
+    <string name="_1">1</string>
+    <string name="_9">9</string>
+    <string name="_570">570</string>
+    <string name="_3275">3275</string>
+    <string name="_1_12">1/12</string>
+    <string name="back_to_menu">Back to menu</string>
 </resources>
