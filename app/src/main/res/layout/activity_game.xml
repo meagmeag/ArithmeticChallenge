@@ -7,7 +7,7 @@
     tools:context=".GameActivity">
 
     <ProgressBar
-        android:id="@+id/progressBar_questions"
+        android:id="@+id/progressBar"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="344dp"
         android:layout_height="63dp"
@@ -22,7 +22,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView_yourScore"
+        android:id="@+id/textViewScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="280dp"
@@ -38,7 +38,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView_highScore"
+        android:id="@+id/textViewHighScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -51,44 +51,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.178"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_yourScore" />
-
-    <TextView
-        android:id="@+id/textView_num1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="32dp"
-        android:text="@string/_1"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textSize="50sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.288"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView_num2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:text="@string/_8"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textSize="50sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewScore" />
 
     <Button
-        android:id="@+id/button_op3"
+        android:id="@+id/choice2"
         android:layout_width="91dp"
         android:layout_height="70dp"
         android:layout_marginEnd="8dp"
@@ -100,11 +66,11 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toEndOf="@+id/button_op2"
+        app:layout_constraintStart_toEndOf="@+id/choice1"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button_op2"
+        android:id="@+id/choice1"
         android:layout_width="91dp"
         android:layout_height="70dp"
         android:layout_marginEnd="8dp"
@@ -119,7 +85,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button_op1"
+        android:id="@+id/choice0"
         android:layout_width="91dp"
         android:layout_height="70dp"
         android:layout_marginEnd="8dp"
@@ -129,7 +95,7 @@
         android:layout_marginTop="156dp"
         android:text="@string/_8"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintEnd_toStartOf="@+id/button_op2"
+        app:layout_constraintEnd_toStartOf="@+id/choice1"
         app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -147,7 +113,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView_highScore"
+        app:layout_constraintStart_toEndOf="@+id/textViewHighScore"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
@@ -166,7 +132,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button_exitGame"
+        android:id="@+id/buttonMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -195,21 +161,21 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.093"
-        app:layout_constraintStart_toEndOf="@+id/textView_yourScore"
+        app:layout_constraintStart_toEndOf="@+id/textViewScore"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewQuestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:text="@string/x"
+        android:layout_marginTop="8dp"
+        android:text="@string/_1_x_8"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textSize="50sp"
+        android:textSize="100sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
