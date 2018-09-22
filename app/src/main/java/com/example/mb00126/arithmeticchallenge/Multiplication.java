@@ -6,13 +6,13 @@ import com.example.mb00126.arithmeticchallenge.ArithmeticChallenge;
  * Meaghan Boykin
  * 9/21/18
  *
- * I made possible question a random number 1-12 x another random number
+ * I made possible questions a random number 1-12 x another random number
  * 1-12 because I remember learning my times tables up to twelve in elementary school.
  *
- * Both possible wrong answers are answers to similar multiplication problems to the original.
- * I did this because this way the possible answers are similar enough to not
- * make the correct answer obvious, and because I feel kids are more likely to accidentally
- * multiply by the wrong number than use the wrong operator.
+ * Both possible wrong answers are answers to similar multiplication problems to the original,
+ * just with one number being multiplied slightly larger or smaller. I did this because this way the possible
+ * answers are similar enough to not make the correct answer obvious, and because I feel kids
+ * are more likely to accidentally multiply by the wrong number than use the wrong operator.
  ****************************************************************/
 
 
@@ -25,8 +25,8 @@ import com.example.mb00126.arithmeticchallenge.ArithmeticChallenge;
         }
 
         protected String createQuestion(){
-            num1 = (int) (12*Math.random()+1);
-            num2 = (int) (12*Math.random()+1);
+            num1 = (int) (12 * Math.random() + 1);
+            num2 = (int) (12 * Math.random() + 1);
             String question = num1 + " x " + num2;
             return question;
         }
