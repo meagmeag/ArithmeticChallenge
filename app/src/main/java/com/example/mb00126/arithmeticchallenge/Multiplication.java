@@ -41,7 +41,7 @@ import com.example.mb00126.arithmeticchallenge.ArithmeticChallenge;
                 else
                     choice1 = num1 * (int) (3 * Math.random() + num2);
             }
-            while (choice1 == choice0 || choice1 == 0);
+            while (choice1 == choice0);
             do {
 
                 if(num2 > 3)
@@ -49,7 +49,7 @@ import com.example.mb00126.arithmeticchallenge.ArithmeticChallenge;
                 else
                     choice2 = num2 * (int) (3 * Math.random() + num1);
             }
-            while (choice2 == choice1 || choice2 == choice0 || choice2 == 0);
+            while (choice2 == choice1 || choice2 == choice0);
 
             int[] choices = {choice0, choice1, choice2};
             return choices;
