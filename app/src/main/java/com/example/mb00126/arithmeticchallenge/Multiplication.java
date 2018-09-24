@@ -47,7 +47,7 @@ import com.example.mb00126.arithmeticchallenge.ArithmeticChallenge;
                 if(num2 > 3)
                     choice2 = num2 * (int) (Math.random() * ((num1 + 2) - (num1 - 2)) + (num1 - 2));
                 else
-                    choice2 = num1 * (int) (3 * Math.random() + num2);
+                    choice2 = num2 * (int) (3 * Math.random() + num1);
             }
             while (choice2 == choice1 || choice2 == choice0 || choice2 == 0);
 
