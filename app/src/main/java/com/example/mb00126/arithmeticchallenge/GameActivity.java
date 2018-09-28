@@ -67,8 +67,8 @@ public class GameActivity extends AppCompatActivity {
     private void listenForClicks(boolean newQuestion){
         if(newQuestion)
             game.setQuestionText(game.createQuestion());
-        mQuestionText.setText(game.getQuestionText());
-        game.setChoices(game.createChoices());
+            mQuestionText.setText(game.getQuestionText());
+            game.setChoices(game.createChoices());
 
 
         // ****** sets choices to view ************************************************
