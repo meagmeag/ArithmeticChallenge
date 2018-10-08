@@ -12,8 +12,8 @@
     <string name="divisionbutton">divisionButton</string>
     <string name="how_to_play">How to play:</string>
     <string name="exit">Exit</string>
-    <string name="high_score">High score:</string>
-    <string name="your_score">Your score:</string>
+    <string name="high_score">High score: 0</string>
+    <string name="yourScore">Score: 0</string>
     <string name="_1">1</string>
     <string name="_9">9</string>
     <string name="_3275">3275</string>
@@ -23,4 +23,10 @@
     <string name="_800">800</string>
     <string name="x">x</string>
     <string name="_1_x_8">1 x 8</string>
+    <string name="correct_toast">Correct!</string>
+    <string name="incorrect_toast">Incorrect</string>
+    <string name="win_text">You win!</string>
+    <string name="next_button">Back to Menu</string>
+    <string name="scoreNum">0</string>
+    <string name="highScoreNum">0</string>
 </resources>
