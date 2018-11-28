@@ -56,6 +56,12 @@ public abstract class ArithmeticChallenge {
         int time = (int) (mEndTime - mStartTime) / 1000;
         if (correct) {
             mScore += 1000 / time;
+            while(!(mScore % 5 == 0))
+                mScore++;
+        }
+        else {
+            if(mScore > 100)
+                mScore -= 100;
         }
     }
 
